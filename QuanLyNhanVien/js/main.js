@@ -126,7 +126,7 @@ function addNV() {
     DSNV.push(nv);
     renderDSNV(DSNV);
     resetForm("#formQLNV");
-    alert("Thêm nhân viên thành công");
+    $("#myModal").modal("hide");
   }
 }
 
@@ -157,7 +157,7 @@ function updateNV() {
     DSNV[position] = nvUpdate;
     renderDSNV(DSNV);
     showDataInForm(nvUpdate);
-    alert("Sửa nhân viên thành công");
+    $("#myModal").modal("hide");
   }
 }
 
